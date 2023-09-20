@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Barcode Scanner
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div id="scannerCam">initializing scanner...</div>
+
+  <p id="resultLabelText">
+    Result: {{resultLabelText}}
+  </p>
+  <p id="avgLabelText">
+    AVG: {{avgLabelText}}
+  </p>
+
+  <!--
+  <ion-button *ngIf="ctlButtonVisible" expand="block" (click)="switchCamera()">
+    Switch Camera
+  </ion-button>
+  -->
+  <ion-button *ngIf="ctlButtonVisible" expand="block" (click)="togglePauseResume()">
+    {{btnTitleScannerAction}}
+  </ion-button>
+
+</ion-content>

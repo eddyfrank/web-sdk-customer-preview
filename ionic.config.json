@@ -1,0 +1,7 @@
+{
+  "name": "my-scanbot-web-ionic-pwa-barcode-scanner-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
